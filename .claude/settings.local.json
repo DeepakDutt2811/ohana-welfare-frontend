@@ -41,7 +41,10 @@
       "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:5183/)",
       "PowerShell(\\(Get-NetTCPConnection -LocalPort 8000 -State Listen -ErrorAction SilentlyContinue\\).OwningProcess)",
       "PowerShell(Stop-Process -Id 30568 -Force)",
-      "Bash(curl -s -X POST http://localhost:8000/api/donations/create-order -H 'Content-Type: application/json' -d '{\"full_name\":\"Test Donor\",\"email\":\"donor@example.com\",\"phone\":\"9999999999\",\"amount\":500}')"
+      "Bash(curl -s -X POST http://localhost:8000/api/donations/create-order -H 'Content-Type: application/json' -d '{\"full_name\":\"Test Donor\",\"email\":\"donor@example.com\",\"phone\":\"9999999999\",\"amount\":500}')",
+      "Bash(docker --version)",
+      "Bash(python -c \"import json; json.load\\(open\\(r'D:\\\\Projects\\\\ohana-welfare-frontend\\\\vercel.json'\\)\\); print\\('vercel.json OK'\\)\")",
+      "Bash(npm run *)"
     ]
   }
 }
