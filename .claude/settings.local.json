@@ -94,7 +94,13 @@
       "Bash(curl -s -i -X POST https://ohana-backend-wun7.onrender.com/api/contacts -H 'Content-Type: application/json' -H 'Origin: https://ohana-welfare-frontend.vercel.app' -d '{\"name\":\"Prod E2E Test\",\"email\":\"prodtest@example.com\",\"phone\":\"9999999999\",\"subject\":\"general\",\"message\":\"End to end production verification.\"}')",
       "Bash(\"/c/Program Files/PostgreSQL/18/bin/psql.exe\" \"postgresql://neondb_owner:npg_k0s4tBbSfKQJ@ep-dry-voice-ay9xz4uj.c-5.us-east-2.aws.neon.tech/ohana_db?sslmode=require&channel_binding=require\" -c \"SELECT id, name, email FROM contacts;\")",
       "Bash(rm -f /tmp/render_create.json)",
-      "Bash(npx --yes vercel domains inspect www.ohanawelfarefoundation.com)"
+      "Bash(npx --yes vercel domains inspect www.ohanawelfarefoundation.com)",
+      "Bash(npx --yes vercel domains inspect ohanawelfarefoundation.com)",
+      "Bash(npx --yes vercel domains inspect ohanawelfarefoundation.in)",
+      "Bash(nslookup ohanawelfarefoundation.com 8.8.8.8)",
+      "Bash(nslookup ohanawelfarefoundation.in 8.8.8.8)",
+      "Bash(curl -s -I --max-time 15 https://ohanawelfarefoundation.com/)",
+      "Bash(nslookup ohanawelfarefoundation.com 1.1.1.1)"
     ]
   }
 }
